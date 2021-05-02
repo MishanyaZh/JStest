@@ -382,3 +382,129 @@
 //     icon:highIcon  = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',} = highTemperatures;
 // // Пиши код выше этой строки
 // const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+
+// z-24
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Пиши код ниже этой строки
+
+// for (const {hex, rgb} of colors) {
+//   hexColors.push(hex);
+//   rgbColors.push(rgb);
+// }
+
+
+// z-25
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Пиши код ниже этой строки
+// const {
+//     today: { low: lowToday,
+//     high:highToday, 
+//     icon: todayIcon =
+// 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',},
+       
+//     tomorrow: {
+//     high: highTomorrow,
+//     low:lowTomorrow,
+//     icon:tomorrowIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',},
+//     } = forecast;
+
+
+// z-26
+// Пиши код ниже этой строки
+// function calculateMeanTemperature(forecast) {
+//   const {today:{low:todayLow, high:todayHigh},tomorrow:{low:tomorrowLow, high:tomorrowHigh}} = forecast;
+  
+//   //const todayLow = forecast.today.low;
+//  // const todayHigh = forecast.today.high;
+//  // const tomorrowLow = forecast.tomorrow.low;
+//   //const tomorrowHigh = forecast.tomorrow.high;
+
+//   // Пиши код выше этой строки
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
+
+// z-27
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Пиши код ниже этой строки
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+
+
+// z-28
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Пиши код ниже этой строки
+// const allScores = [...firstGroupScores,...secondGroupScores,...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+
+
+// z-29
+// const defaultSettings = {
+//   theme: 'light',
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Пиши код ниже этой строки
+// const finalSettings = {...defaultSettings,...overrideSettings};
+
+
+// z-30
+// const newtask = {category, priority, ...data, completed}
+//     return newtask;
+
+
+// z-31
+// Пиши код ниже этой строки
+// function add(...args) {
+// let total = 0;
+//   for (const arg of args)
+//   {total += arg;}
+//   return total;
+//   // Пиши код выше этой строки
+// }
+
+
+// z-32
+// Пиши код ниже этой строки
+// function addOverNum(value, ...args) {
+//   let total = 0;
+
+//   for (const arg of args) 
+//   if (value<arg){
+    
+//     total += arg;
+//   }
+
+//   return total;
+//   // Пиши код выше этой строки
+// }
+
