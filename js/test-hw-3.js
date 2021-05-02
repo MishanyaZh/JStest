@@ -190,3 +190,195 @@
 
 //   // Пиши код выше этой строки
 // }
+
+
+// z-12
+// function countProps(object) {
+//   let propCount = 0;
+//   // Пиши код ниже этой строки
+
+//  const propCountKeys = Object.keys(object);
+//  propCount = propCountKeys.length;
+  
+//   // Пиши код выше этой строки
+//   return propCount;
+// }
+
+
+// z-13
+// const apartment = {
+//   descr: 'Просторная квартира в центре',
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Пиши код ниже этой строки
+// const keys = Object.keys(apartment);
+
+// for (const key of keys) {
+// values.push(apartment[key]);
+// }
+
+
+// z-14
+// function countProps(object) {
+//   // Пиши код ниже этой строки
+//   let propCount = 0;
+
+// 	const countPropKeys = Object.keys(object);
+// 	propCount = countPropKeys.length;
+
+//   return propCount;
+//   // Пиши код выше этой строки
+// }
+
+
+// z-15
+// const apartment = {
+//   descr: 'Просторная квартира в центре',
+//   rating: 4,
+//   price: 2153,
+// };
+// // Пиши код ниже этой строки
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+
+// Z-16
+//  function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Пиши код ниже этой строки
+//   const values = Object.values(salaries);
+// 	for (const value of values) {
+// 	totalSalary += value;
+// 	}
+//   // Пиши код выше этой строки
+//   return totalSalary;
+// }
+
+
+// z-17
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+// const hexColors = [];
+// const rgbColors = [];
+// // Пиши код ниже этой строки
+// for (const color of colors) {
+//  hexColors.push(color.hex);
+//    rgbColors.push(color.rgb);
+// }
+
+
+// z-18
+// const products = [
+//   { name: 'Радар', price: 1300, quantity: 4 },
+//   { name: 'Сканер', price: 2700, quantity: 3 },
+//   { name: 'Дроид', price: 400, quantity: 7 },
+//   { name: 'Захват', price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   // Пиши код ниже этой строки
+  
+//   for (const product of products) 
+//   if (productName===product.name){
+//     return product.price;
+//   }
+//   return null;
+  
+//   // Пиши код выше этой строки
+// }
+
+
+// z-19
+// const products = [
+//   { name: 'Радар', price: 1300, quantity: 4 },
+//   { name: 'Сканер', price: 2700, quantity: 3 },
+//   { name: 'Дроид', price: 400, quantity: 7 },
+//   { name: 'Захват', price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Пиши код ниже этой строки
+//  const values = [];
+//   for (const product of products) {
+    
+// if (product[propName]) {
+//     values.push(product[propName]);
+//     }
+//   }
+//     return values;
+//   // Пиши код выше этой строки
+// }
+// console.log(getAllPropValues('name'));
+
+
+// z-20
+// const products = [
+//   { name: 'Радар', price: 1300, quantity: 4 },
+//   { name: 'Сканер', price: 2700, quantity: 3 },
+//   { name: 'Дроид', price: 400, quantity: 7 },
+//   { name: 'Захват', price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Пиши код ниже этой строки
+//   let price = 0;
+  
+// for (const product of products) {
+//   if (productName === product.name) {
+// price = product.price * product.quantity;
+//   } 
+// }
+
+// return price;
+//   // Пиши код выше этой строки
+// }
+
+
+// z-21
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Пиши код ниже этой строки
+
+// const {yesterday, today, tomorrow}  = highTemperatures;
+
+// // Пиши код выше этой строки
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+
+// z-22
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Пиши код ниже этой строки
+
+// const {yesterday, today, tomorrow, icon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg' }  = highTemperatures;
+
+// // Пиши код выше этой строки
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+
+// z - 23
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Пиши код ниже этой строки
+
+// const { yesterday: highYesterday,
+//     today: highToday,
+//     tomorrow: highTomorrow,
+//     icon:highIcon  = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',} = highTemperatures;
+// // Пиши код выше этой строки
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
