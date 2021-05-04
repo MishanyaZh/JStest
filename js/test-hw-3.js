@@ -511,17 +511,21 @@
 
 // z-33
 // Пиши код ниже этой строки
-// function findMatches(args,...numbers) {
+// function findMatches(args,...numbers){
+  // args це окремий масив. а (...numbers) це решта довільна кількість елкментів зібрана в масив за допомошою (...)
 //     const matches = []; // Не изменяй эту строку
 
 //     for (const number of numbers) {
 //         //----1----
+       //переьираемо все в  ...numbers
 //         //console.log(number);
 
 //         for (const arg of args) {
 //             //----2-----
+           //перебор масива
 //            // console.log(arg);
 
+// тепер після перебору якщо в (arg) є те що є в (...numbers) то ми пушимо все що співмадає
 //             if (arg===number) {
 //             matches.push(number);
 //             }
@@ -634,7 +638,7 @@ const atTheOldToad = {
     { name: 'Каменная кожа', price: 520 },
   ],
   // Пиши код ниже этой строки
-  getPotions() {
+   getPotions() {
     return this.potions;
   },
   addPotion(potionName) {
@@ -644,24 +648,28 @@ const atTheOldToad = {
 
     this.potions.push(potionName);
   },
+  
   removePotion(potionName) {
-    const potionIndex = this.potions.indexOf(potionName);
+    const {potions} = this;
 
-    if (potionIndex === -1) {
-      return `Зелья ${potionName} нет в инвентаре!`;
-    }
-
-    this.potions.splice(potionIndex, 1);
+    for (let i = 0; i < potions.length; i+=1) {
+    const potion = potions[i];
+      if (potionName === potion.name) {
+      potions.splice(i, 1);
+        return potions;
+      }
+    } 
   },
-  updatePotionName(oldName, newName) {
-    const potionIndex = this.potions.indexOf(oldName);
-
-    if (potionIndex === -1) {
-      return `Зелья ${oldName} нет в инвентаре!`;
+  
+   updatePotionName(oldName, newName) {
+    
+    for (const potion of this.potions) {
+    if (potion.name ===oldName) {
+    potion.name = newName;
+      //return this.potion;
+     }
     }
-
-    this.potions.splice(potionIndex, 1, newName);
-  },
+   },
   // Пиши код выше этой строки
 };
 console.log(atTheOldToad.getPotions());
