@@ -631,45 +631,45 @@
 
 
 // z-41
-const atTheOldToad = {
-  potions: [
-    { name: 'Зелье скорости', price: 460 },
-    { name: 'Дыхание дракона', price: 780 },
-    { name: 'Каменная кожа', price: 520 },
-  ],
-  // Пиши код ниже этой строки
-   getPotions() {
-    return this.potions;
-  },
-  addPotion(potionName) {
-    if (this.potions.includes(potionName)) {
-      return `Зелье ${potionName} уже есть в инвентаре!`;
-    }
+// const atTheOldToad = {
+//   potions: [
+//     { name: 'Зелье скорости', price: 460 },
+//     { name: 'Дыхание дракона', price: 780 },
+//     { name: 'Каменная кожа', price: 520 },
+//   ],
+//   // Пиши код ниже этой строки
+//    getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     if (this.potions.includes(potionName)) {
+//       return `Зелье ${potionName} уже есть в инвентаре!`;
+//     }
 
-    this.potions.push(potionName);
-  },
+//     this.potions.push(potionName);
+//   },
   
-  removePotion(potionName) {
-    const {potions} = this;
+//   removePotion(potionName) {
+//     const {potions} = this;
 
-    for (let i = 0; i < potions.length; i+=1) {
-    const potion = potions[i];
-      if (potionName === potion.name) {
-      potions.splice(i, 1);
-        return potions;
-      }
-    } 
-  },
+//     for (let i = 0; i < potions.length; i+=1) {
+//     const potion = potions[i];
+//       if (potionName === potion.name) {
+//       potions.splice(i, 1);
+//         return potions;
+//       }
+//     } 
+//   },
   
-   updatePotionName(oldName, newName) {
+//    updatePotionName(oldName, newName) {
     
-    for (const potion of this.potions) {
-    if (potion.name ===oldName) {
-    potion.name = newName;
-      //return this.potion;
-     }
-    }
-   },
-  // Пиши код выше этой строки
-};
-console.log(atTheOldToad.getPotions());
+//     for (const potion of this.potions) {
+//     if (potion.name ===oldName) {
+//     potion.name = newName;
+//       //return this.potion;
+//      }
+//     }
+//    },
+//   // Пиши код выше этой строки
+// };
+// console.log(atTheOldToad.getPotions());
