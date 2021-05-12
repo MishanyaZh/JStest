@@ -172,3 +172,68 @@
 //   	this.#brand = newBrand;
 //   }
 // }
+
+
+// z-12
+// class Storage {
+//  #items;
+//   constructor (items) {
+//   this.#items = items;
+//   }
+  
+//   getItems () {
+//   return this.#items;
+// }
+
+// addItem (newItem) {
+//   this.#items.push(newItem);
+// }
+
+// removeItem (item) {
+//   const itemIndex = this.#items.indexOf(item);
+//   this.#items.splice(itemIndex, 1);
+// }
+// }
+// // Пиши код выше этой строки
+// const storage = new Storage(["Нанитоиды", "Пролонгер", "Антигравитатор"]);
+// console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор"]
+// storage.addItem("Дроид");
+// console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор", "Дроид"]
+// storage.removeItem("Пролонгер");
+// console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Дроид"]
+
+
+// z-13
+// class StringBuilder {
+//   #value
+  
+//   constructor(baseValue) {
+//   this.#value = baseValue;
+// }
+
+// getValue () {
+//   return this.#value;
+// }
+
+// padEnd (str) {
+//   this.#value += str;
+// }
+
+// padStart (str) {
+//   this.#value = str + this.#value;
+// }
+
+// padBoth (str) {
+//   this.padStart(str);
+//   this.padEnd(str);
+// }
+// }
+// // Пиши код выше этой строки
+// const builder = new StringBuilder('.');
+// console.log(builder.getValue()); // '.'
+// builder.padStart('^');
+// console.log(builder.getValue()); // '^.'
+// builder.padEnd('^');
+// console.log(builder.getValue()); // '^.^'
+// builder.padBoth('=');
+// console.log(builder.getValue()); // '=^.^='
