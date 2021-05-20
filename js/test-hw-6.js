@@ -197,23 +197,23 @@
 
 
 
-const books = [
-    {
-      title: 'Последнее королевство',
-      author: 'Бернард Корнуэлл',
-      genres: ['приключения', 'историческое']
-    },
-    {
-      title: 'На берегу спокойных вод',
-      author: 'Роберт Шекли',
-      genres: ['фантастика', 'мистика']
-    },
-    {
-      title: 'Красна как кровь',
-      author: 'Ли Танит',
-      genres: ['ужасы', 'мистика', 'приключения']
-    }
-];
+// const books = [
+//     {
+//       title: 'Последнее королевство',
+//       author: 'Бернард Корнуэлл',
+//       genres: ['приключения', 'историческое']
+//     },
+//     {
+//       title: 'На берегу спокойных вод',
+//       author: 'Роберт Шекли',
+//       genres: ['фантастика', 'мистика']
+//     },
+//     {
+//       title: 'Красна как кровь',
+//       author: 'Ли Танит',
+//       genres: ['ужасы', 'мистика', 'приключения']
+//     }
+// ];
 
 
 // z-16
@@ -397,4 +397,218 @@ const users = [
 // // Пиши код выше этой строки
 
 
+// z-24
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'Сон смешного человека';
+// const AUTHOR = 'Роберт Шекли';
+// // Пиши код ниже этой строки
 
+// const bookWithTitle = books.find(book=> book.title===BOOK_TITLE);
+// const bookByAuthor = books.find(book=> book.author===AUTHOR);
+
+
+// console.log(bookWithTitle);
+// console.log(bookByAuthor);
+
+
+// z-25
+// // Пиши код ниже этой строки
+// const getUserWithEmail = (users, email) => {
+//   const userEmail = users.find((user)=> user.email===email);
+//   return userEmail;
+// };
+// // Пиши код выше этой строки
+
+
+// z-26
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const eachElementInFirstIsEven = firstArray.every((value)=> value = value % 2===0);
+// const eachElementInFirstIsOdd = firstArray.every((value)=> value = value % 2!==0);
+
+// const eachElementInSecondIsEven = secondArray.every(value=> value =value % 2===0);
+// const eachElementInSecondIsOdd = secondArray.every((value)=>value =value %2 !==0);
+
+// const eachElementInThirdIsEven = thirdArray.every(value=> value =value % 2===0);
+// const eachElementInThirdIsOdd = thirdArray.every((value)=>value =value %2 !==0);
+
+
+// z-27
+// // Пиши код ниже этой строки
+// const isEveryUserActive = (users) => {
+//  const userIsactiv = users.every((user)=> user.isActive===true);
+//   return userIsactiv;
+// };
+// // Пиши код выше этой строки
+
+
+// z-28
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const anyElementInFirstIsEven = firstArray.some(value=> value=value %2===0);
+// const anyElementInFirstIsOdd = firstArray.some(value=>value=value%2!==0);
+
+// const anyElementInSecondIsEven = secondArray.some(value=> value=value %2===0);
+// const anyElementInSecondIsOdd = secondArray.some(value=>value=value%2!==0);
+
+// const anyElementInThirdIsEven = thirdArray.some(value=> value=value %2===0);
+// const anyElementInThirdIsOdd = thirdArray.some(value=>value=value%2!==0);
+
+
+// z-29
+// // Пиши код ниже этой строки
+// const isAnyUserActive = users => {
+//   const activUsers = users.some((user)=> user.isActive===true);
+//   return activUsers;
+// };
+// // Пиши код выше этой строки
+
+
+// z-30
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Пиши код ниже этой строки
+
+// const totalPlayTime = playtimes.reduce((acum, playtime)=> {
+// 	return acum + playtime;
+// }, 0);
+
+// // Пиши код выше этой строки
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+
+// z-31
+// const players = [
+//   { name: 'Манго', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Поли', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Аякс', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Киви', playtime: 241, gamesPlayed: 1 },
+// ];
+// // Пиши код ниже этой строки
+
+// const totalAveragePlaytimePerGame = players.reduce((total,player)=> {
+// return total + player.playtime/player.gamesPlayed;
+// },0);
+
+
+// z-32
+// // Пиши код ниже этой строки
+// const calculateTotalBalance = users => {
+//    const summBalance = users.reduce((total,user)=>{
+//    	return total = total + user.balance;
+//    },0);
+//   return summBalance;
+// };
+// // Пиши код выше этой строки
+// // 2
+// // Пиши код ниже этой строки
+// const calculateTotalBalance = users => {
+//    const summBalance = users.reduce((total,user)=>
+//    	 total = total + user.balance,0);
+//   return summBalance;
+// };
+// // Пиши код выше этой строки
+
+
+
+// z-33
+// // Пиши код ниже этой строки
+// const getTotalFriendCount = users => {
+//    const friendsOrder = users.reduce((total,user)=>
+//    total= total + user.friends.length,0);
+//   return friendsOrder;
+// };
+// // Пиши код выше этой строки
+
+
+// z-34
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский'
+// ];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
+
+
+// z-35
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+
+// z-36
+// const authors = [
+//     'Ли Танит',
+//     'Бернард Корнуэлл',
+//     'Роберт Шекли',
+//     'Федор Достоевский',
+//     'Говард Лавкрафт'
+//   ];
+//   // Пиши код ниже этой строки
+  
+//   const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+  
+//   const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
+
+// z-37
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//   { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+// ];
+// // Пиши код ниже этой строки
+
+// const sortedByAuthorName = [...books].sort((firstAuthor,secondAuthor)=>
+// firstAuthor.author.localeCompare(secondAuthor.author));
+
+// const sortedByReversedAuthorName = [...books].sort((firstAuthor,secondAuthor)=>
+// secondAuthor.author.localeCompare(firstAuthor.author));
+
+// const sortedByAscendingRating = [...books].sort(
+// (firstAuthor,secondAuthor)=>
+//   firstAuthor.rating-secondAuthor.rating
+// );
+
+// const sortedByDescentingRating = [...books].sort(
+// (firstAuthor,secondAuthor)=>
+//   secondAuthor.rating-firstAuthor.rating
+// );
+
+
+// z-38
+// // Пиши код ниже этой строки
+// const sortByAscendingBalance = users => {
+//     const balansUsers = [...users].sort((firstUser, secondUser) =>
+//         firstUser.balance - secondUser.balance);
+  
+//   return balansUsers;
+// };
+// // Пиши код выше этой строки
