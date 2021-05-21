@@ -612,3 +612,82 @@ const users = [
 //   return balansUsers;
 // };
 // // Пиши код выше этой строки
+
+
+// z-39
+// // Пиши код ниже этой строки
+// const sortByDescendingFriendCount = users => {
+  
+//   const friendsCount = [...users].sort((a, b) => b.friends.length - a.friends.length);
+  
+//   return friendsCount;
+// };
+// // Пиши код выше этой строки
+
+
+// z-40
+// // Пиши код ниже этой строки
+// const sortByName = users => {
+//   const userNameSort = [...users].sort((a,b)=>a.name.localeCompare(b.name)); 
+//   return userNameSort;
+// };
+// // Пиши код выше этой строки
+
+
+// z-41
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 8.14 },
+//   { title: 'Сны В Ведьмином Доме', author: 'Говард Лавкрафт', rating: 8.67 }
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Пиши код ниже этой строки
+
+// const names = [...books]
+// .filter((user)=>user.rating>MIN_BOOK_RATING)
+// .flatMap((book)=>book.author)
+// .sort();
+
+
+// z-42
+// // Пиши код ниже этой строки
+// const getNamesSortedByFriendCount = users => {
+//   const nameArr =[...users]
+//   .sort((a,b)=>a.friends.length-b.friends.length)
+//   .flatMap((users)=>users.name);
+//   return nameArr;
+// };
+// // Пиши код выше этой строки
+// // Пиши код ниже этой строки
+// const getNamesSortedByFriendCount = users => {
+//   const nameArr =[...users]
+//   .sort((a,b)=>a.friends.length-b.friends.length)
+//   .map((users)=>users.name);
+//   return nameArr;
+// };
+// // Пиши код выше этой строки
+
+
+// z-43
+// // Пиши код ниже этой строки
+// const getSortedFriends = users => {
+//    const friendsUnic = [...users]
+// .flatMap((users)=> users.friends)
+// .filter((friend,index,arr)=>arr.indexOf(friend)===index)
+// .sort();
+//   return friendsUnic;
+// };
+// // Пиши код выше этой строки
+
+
+
+// z-44
+// // Пиши код ниже этой строки
+// const getTotalBalanceByGender = (users, gender) => [...users]
+//     .filter(user => user.gender===gender)
+//     .reduce((total,value)=>total+value.balance, 0);
+// // Пиши код выше этой строки
+// console.log(getTotalBalanceByGender(users, gender));
+// getTotalBalanceByGender(users, gender)
